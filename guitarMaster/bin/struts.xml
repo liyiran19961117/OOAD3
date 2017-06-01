@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	<constant name="conststruts.devMode" value="true"/>
+	<constant name="struts.enable.DynamicMethodInvocation" value="false" />
+	<package name="gui" extends="struts-default">
+		<action name="*">
+			<result>/WEB-INF/view/{1}.jsp</result>
+		</action>	
+	</package>
+	<package name="guitar" namespace="/guitar" extends="json-default">
+		<action name="guitarAction_*" class="cumt.ec.instrument.action.GuitarAction" method="{1}">
+			<result type="json" name="jsonArray">
+				<param name="noCache">true</param>
+				<param name="contentType">text/html</param>
+				<param name="root">jsonArray</param>
+			</result>
+			<result name="jsonObject" type="json">
+	        	<!-- 为该result指定参数 -->
+	        	<param name="noCache">true </param>
+	        	<param name="contentType">text/html</param>
+	        	<!-- 设置action的map属性-->
+	        	<param name="root"> jsonObject</param>
+        	</result>
+		</action>
+	</package>
+	
+
+</struts>
