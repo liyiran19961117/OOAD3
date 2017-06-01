@@ -10,6 +10,5 @@
 <div>删除：</div>
 <img src="guitar3-5.PNG">
 <img src="guitar3-6.PNG">
-<img src="guitar3-8.PNG">
 <div>测试：</div>
-<img src="guitar3-9.PNG">
+<img src="guitar3-8.PNG">
