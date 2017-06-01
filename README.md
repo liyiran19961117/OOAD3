@@ -6,4 +6,4 @@
 <img src="guitar3-5.PNG">
 <img src="guitar3-6.PNG">
 <img src="guitar3-8.PNG">
-
+<img src="guitar3-9.PNG">
